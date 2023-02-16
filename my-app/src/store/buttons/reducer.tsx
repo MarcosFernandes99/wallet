@@ -7,12 +7,12 @@ const MoneyReducer = (state = VALUE_INITIAL_STATE, action: IAction) => {
         case "SET_ADD_MONEY":
             return {
                 ...state,
-                value:  state.value + 10
+                value:  state.value + action.payload
             }
         case "SET_REMOVE_MONEY":
             return {
                 ...state,
-                value:  state.value - 10
+                value:  state.value - action.payload
             }
 
         default:
