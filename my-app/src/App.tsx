@@ -2,15 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Wallet } from './components/wallet';
+import { ThemeProvider } from 'styled-components'
+import { darkTheme, lightTheme } from './styles/themes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Wallet />
-      </header>
-    </div>
+    <ThemeProvider theme={darkTheme}>
+      <Wallet />
+    </ThemeProvider>
   );
 }
 

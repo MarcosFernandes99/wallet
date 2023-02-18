@@ -12,4 +12,15 @@ export const setRemoveMoney = (value: number) => {
     }
 }
 
+export const setTheme = (theme: string) => {
+    return {
+        type: "SET_THEME",
+        payload: theme
+    }
+}
+
+
+
+
+
 

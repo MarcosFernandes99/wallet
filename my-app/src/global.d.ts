@@ -4,7 +4,14 @@ interface IAction {
 }
 
 interface IState {
-    wallet: {
+    wallet?: {
         value: 0
     }
+    theme?: {
+        theme: string
+    }
 }
+
+// interface ITheme {
+//     theme: string;
+// }
